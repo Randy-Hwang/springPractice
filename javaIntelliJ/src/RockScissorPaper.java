@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class RockScissorPaper {
     public static void main(String[] args) {
-        String input = "";
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("가위바위보 게임을 시작합니다!");
@@ -16,8 +15,7 @@ public class RockScissorPaper {
 
         while (true) {
             System.out.println("게임 종료를 원하시면 0을 눌러주세요 : ");
-            input = scanner.nextLine();
-            int inputNum = Integer.parseInt(input);
+            int inputNum = Integer.parseInt(scanner.nextLine());
 
             if (!(0 <= inputNum && inputNum <= 3)) {
                 System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
